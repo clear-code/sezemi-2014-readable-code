@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="not-goal.svg">
+   sodipodi:docname="goal.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -48,16 +48,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="321.67005"
-     inkscape:cy="257.82729"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="120.05794"
+     inkscape:cy="151.58059"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1259"
      inkscape:window-height="816"
-     inkscape:window-x="2031"
-     inkscape:window-y="118"
+     inkscape:window-x="2007"
+     inkscape:window-y="117"
      inkscape:window-maximized="0"
      fit-margin-top="10"
      fit-margin-left="10"
@@ -131,77 +131,50 @@
        id="path2992"
        inkscape:connector-curvature="0" />
     <path
+       style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 240.06276,458.03893 117.73328,0"
+       id="path3970"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 264.67228,435.88971 c 8.31426,1.91586 14.51358,9.36402 14.51358,18.26013 l 0,0 c 0,1.33863 -0.14036,2.64448 -0.40718,3.90362"
+       id="path3986"
+       inkscape:connector-curvature="0" />
+    <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 122.12132,493.36218 118.18729,1 0,-101.39771 352.96495,0.81044"
+       d="m 122.12132,493.36218 118.37868,1 -0.38277,-36.69744 205.39749,-181.30256"
        id="path3968"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="489.35028"
-       y="311.79721"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="390"
+       y="478.79721"
        id="text4013"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan3815"
-         x="489.35028"
-         y="311.79721">今日の増加分の</tspan></text>
+         id="tspan4015"
+         x="390"
+         y="478.79721">傾きを大きく</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="342.97656"
-       y="250.94797"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       x="385.97656"
+       y="417.94797"
        id="text4017"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan3777"
-         x="342.97656"
-         y="250.94797">目標ではない</tspan></text>
+         id="tspan3091">狙い</tspan></text>
     <rect
        style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4021"
-       width="302.43503"
-       height="116.27817"
-       x="338.17157"
-       y="262.64645"
+       width="260.82843"
+       height="65.1091"
+       x="373.17157"
+       y="429.64645"
        rx="10.338835"
        ry="10.338835" />
-    <g
-       id="g3808">
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path3970"
-         d="m 250.11569,493.24835 0,-99.48328"
-         style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 239.99905,494.38929 20.23328,0"
-         id="path3796"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path3798"
-         d="m 239.99905,393.00671 20.23328,0"
-         style="fill:none;stroke:#a40000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    </g>
-    <text
-       sodipodi:linespacing="125%"
-       id="text3006"
-       y="311.79721"
-       x="489.35028"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       xml:space="preserve"><tspan
-         id="tspan3010"
-         sodipodi:role="line"
-         x="489.35028"
-         y="311.79721" /><tspan
-         sodipodi:role="line"
-         id="tspan3012"
-         x="489.35028"
-         y="361.79721">最大化</tspan></text>
   </g>
 </svg>

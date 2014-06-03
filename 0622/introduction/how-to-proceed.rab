@@ -81,7 +81,7 @@
 = 「書き読み書き」の狙い
 
   # image
-  # src = images/goal.svg
+  # src = images/expected-by-reading-writing-reading.svg
   # relative_height = 100
 
 == プロパティー
@@ -89,10 +89,21 @@
 : enable-title-on-image
    false
 
-= テクニック伝授
+= テクニック伝授は範囲外
 
   # image
-  # src = images/not-goal.svg
+  # src = images/many-tips-are-not-important.svg
+  # relative_height = 100
+
+== プロパティー
+
+: enable-title-on-image
+   false
+
+= 将来を重視
+
+  # image
+  # src = images/goal.svg
   # relative_height = 100
 
 == プロパティー
@@ -108,15 +119,4 @@
 歩き始める
 
 ((' '))
-
-= 目標は将来を重視
-
-  # image
-  # src = images/goal-for-future.svg
-  # relative_height = 100
-
-== プロパティー
-
-: enable-title-on-image
-   false
 
