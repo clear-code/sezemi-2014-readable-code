@@ -8,15 +8,32 @@
 開発するプログラムは「レシピ管理プログラム」です。
 
 この勉強会は「リーダブルコードを身につけること」が目的であり、「難しい
-プログラムでも実装できるようになること」は目的ではありません。そのため、
-次の点に注意して開発するプログラムを用意しました。
+プログラムでも実装できるようになること」や「速く実装できるようになるこ
+と」は目的ではありません。そのため、次の点に注意して開発するプログラム
+の仕様を用意しました。
 
   * 言語の基本的な機能のみで実現できる。
     * ライブラリーを知っていることや使えることは重要ではない。
   * 難しいロジックを必要としない。
     * 効率のよいアルゴリズムを考えることは重要ではない。
   * 段階的に改良していく。
-    * 書き捨てのプログラムではなく継続的に開発するプログラムであることは重要である。
+    * 書き捨てのプログラムではなく継続的に開発するプログラムであること
+      は重要である。
+  * すべての仕様を実装しなくてもよい。
+    * 今回の実装時間は150分で仕様は13個ある。平均して11分で1つ実装する
+      とすべての仕様を実装できますが、「速く実装できるようになること」は
+      目的ではないので、すべての仕様を実装することは重要ではない。
+
+開発するコードは「今の自分で最高にリーダブルなコード」にしてください。
+そのとき、「どうしてこのコードはリーダブルと言えるのか」の理由も考えて
+ください。例えば、「 `do_something` では何かをするのはわかるけど何をす
+るのかわからないが、 `open_file` ならファイルを開くということがすぐわか
+るのでリーダブルだ」といった具合です。
+
+理由を考えるのは、理由をつけられるくらい考えていれば応用が効くからです。
+前述の例の理由からは「何をするのかわかる名前がよい」という基準を見つけ
+られれます。この基準を使えば、違うコードでもリーダブルなコードを書けま
+す。
 
 ## 進め方
 
@@ -75,7 +92,8 @@
 ## 仕様
 
 それぞれの仕様には次の2点を明記しています。仕様を実装した後は、各自、こ
-れらを使って仕様を満たしているかどうかを確認してください。
+れらを使って仕様を満たしているかどうかを確認してください。不安な場合は
+メンターに質問したり、確認をお願いしてください。
 
   * 入力
   * 期待する結果
@@ -100,11 +118,9 @@
 
 recipe.sh:
 
-```sh
-#!/bin/sh
+    #!/bin/sh
 
-echo "オムライス"
-```
+    echo "オムライス"
 
 実行:
 
@@ -148,6 +164,7 @@ READMEに書かれた手順に従って作業すれば、このプログラム�
   * データファイル
     * ファイル名は任意。例: recipe-data.txt
     * 中身は「オムライス」というレシピ情報1つだけ。
+    * データファイルはリポジトリーに入れること
 
 データファイルは、例えばこういう内容:
 
@@ -406,8 +423,309 @@ READMEを読めば、グループの他の人でもユーザー名を指定で�
 
 ### 仕様9: 4人のユーザーのレシピ情報をサポートすること
 
-TODO
+今のプログラムは1人のユーザーのレシピ情報だけを扱えますが、これを4人の
+ユーザーのレシピ情報も扱えるようにしてください。
+
+出力するときはユーザー毎にレシピを出力してください。
+
+ユーザー名とそのユーザーのレシピ情報の指定方法は問いません。
+
+どのような指定方法にしたかはREADMEに記述してください。
+
+ユーザー名は重複するかもしれません。
 
 #### 入力
 
+  * ユーザー名とデータファイルのペアを4つ
+    * データファイル内のレシピ数は3つ
+    * 1つはこれまで使ってきたデータファイルを使うこと
+    * 残りの3つはこれまで使ってきたデータファイルを参考に新しく作ること
+    * 異なるユーザーで同じレシピ情報を持っているかもしれない
+      * 例: ユーザー1とユーザー2のどちらにも「オムライス」がある
+    * すべてのレシピは異なるIDを持つこと
+    * すべてのデータファイルはリポジトリーに入れること
+
+データファイルは、例えばこういう内容:
+
+    % cat recipe-data1.txt
+    オムライス http://cookpad.com/recipe/2653946
+    親子丼 http://cookpad.com/recipe/2657882
+    杏仁豆腐 http://cookpad.com/recipe/2654398
+    % cat recipe-data2.txt
+    オムライス http://cookpad.com/recipe/2653779
+    鶏の唐揚げ http://cookpad.com/recipe/2660337
+    カレー http://cookpad.com/recipe/2661962
+    % cat recipe-data3.txt
+    トマトサラダ http://cookpad.com/recipe/2662101
+    生ハムサラダ http://cookpad.com/recipe/2661792
+    和風サラダ http://cookpad.com/recipe/279208
+    % cat recipe-data4.txt
+    チョコケーキ http://cookpad.com/recipe/2661922
+    スイートポテト http://cookpad.com/recipe/2639428
+    杏仁豆腐 http://cookpad.com/recipe/2565701
+    %
+
 #### 期待する結果
+
+プログラムを実行したら、レシピ情報とそのレシピ情報を集めているユーザー
+名を受け取り、ユーザー名と読み込んだレシピ情報を表示します。IDを指定し
+たら指定したレシピだけ表示する機能を壊さないでください。
+
+実行例:
+
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt
+    ユーザー名: kou
+    1: オムライス http://cookpad.com/recipe/2653946
+    2: 親子丼 http://cookpad.com/recipe/2657882
+    3: 杏仁豆腐 http://cookpad.com/recipe/2654398
+
+    ユーザー名: piro
+    4: オムライス http://cookpad.com/recipe/2653779
+    5: 鶏の唐揚げ http://cookpad.com/recipe/2660337
+    6: カレー http://cookpad.com/recipe/2661962
+
+    ユーザー名: okkez
+    7: トマトサラダ http://cookpad.com/recipe/2662101
+    8: 生ハムサラダ http://cookpad.com/recipe/2661792
+    9: 和風サラダ http://cookpad.com/recipe/279208
+
+    ユーザー名: kou
+    10: チョコケーキ http://cookpad.com/recipe/2661922
+    11: スイートポテト http://cookpad.com/recipe/2639428
+    12: 杏仁豆腐 http://cookpad.com/recipe/2565701
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt sunaot recipe-data4.txt 5
+    ユーザー名: kou
+
+    ユーザー名: piro
+    5: 鶏の唐揚げ http://cookpad.com/recipe/2660337
+
+    ユーザー名: okkez
+
+    ユーザー名: kou
+    %
+
+READMEを読めば、グループの他の人でもユーザー名と対応するデータファイル
+を指定できるようにしてください。
+
+### 仕様10: ユーザーにIDを振ること
+
+今のプログラムは同じユーザー名だと区別できない。指定されたユーザーにプ
+ログラム内で自動でID（ユーザーを一意に識別できる識別子）を振ってユーザー
+を区別できるようにすること。IDは数値でも文字列でも一意であればなんでも
+よい。
+
+出力するときはIDも出力すること。
+
+#### 入力
+
+  * ユーザー名とデータファイルのペアを4つ
+    * データファイル内のレシピ数は3つ
+    * 1つはこれまで使ってきたデータファイルを使うこと
+    * 残りの3つはこれまで使ってきたデータファイルを参考に新しく作ること
+    * 異なるユーザーで同じレシピ情報を持っているかもしれない
+      * 例: ユーザー1とユーザー2のどちらにも「オムライス」がある
+    * すべてのレシピは異なるIDを持つこと
+
+データファイルは、例えばこういう内容:
+
+    % cat recipe-data1.txt
+    オムライス http://cookpad.com/recipe/2653946
+    親子丼 http://cookpad.com/recipe/2657882
+    杏仁豆腐 http://cookpad.com/recipe/2654398
+    % cat recipe-data2.txt
+    オムライス http://cookpad.com/recipe/2653779
+    鶏の唐揚げ http://cookpad.com/recipe/2660337
+    カレー http://cookpad.com/recipe/2661962
+    % cat recipe-data3.txt
+    トマトサラダ http://cookpad.com/recipe/2662101
+    生ハムサラダ http://cookpad.com/recipe/2661792
+    和風サラダ http://cookpad.com/recipe/279208
+    % cat recipe-data4.txt
+    チョコケーキ http://cookpad.com/recipe/2661922
+    スイートポテト http://cookpad.com/recipe/2639428
+    杏仁豆腐 http://cookpad.com/recipe/2565701
+    %
+
+#### 期待する結果
+
+プログラムを実行したら読み込んだユーザーになんらかの方法でIDを振る。そ
+して、そのユーザー名をID付きですべて出力する。
+
+実行例:
+
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt
+    ユーザー: 1: kou
+    1: オムライス http://cookpad.com/recipe/2653946
+    2: 親子丼 http://cookpad.com/recipe/2657882
+    3: 杏仁豆腐 http://cookpad.com/recipe/2654398
+
+    ユーザー: 2: piro
+    4: オムライス http://cookpad.com/recipe/2653779
+    5: 鶏の唐揚げ http://cookpad.com/recipe/2660337
+    6: カレー http://cookpad.com/recipe/2661962
+
+    ユーザー: 3: okkez
+    7: トマトサラダ http://cookpad.com/recipe/2662101
+    8: 生ハムサラダ http://cookpad.com/recipe/2661792
+    9: 和風サラダ http://cookpad.com/recipe/279208
+
+    ユーザー: 4: kou
+    10: チョコケーキ http://cookpad.com/recipe/2661922
+    11: スイートポテト http://cookpad.com/recipe/2639428
+    12: 杏仁豆腐 http://cookpad.com/recipe/2565701
+
+### 仕様11: IDを指定したユーザーだけ表示すること
+
+今のプログラムはすべてのユーザーを表示します。IDを指定した場合は指定し
+たIDのユーザーだけを表示してください。IDの指定方法は問いません。
+
+IDの指定方法はREADMEに記述してください。
+
+指定されるIDは必ず存在するIDと仮定して構いません。
+
+IDを指定されなかった場合の挙動は変えないでください。
+
+ユーザーIDとレシピIDを指定した場合は該当ユーザーの該当レシピ情報だけ表
+示してください。レシピIDは指定したユーザーが持っているレシピのIDである
+と仮定して構いません。
+
+#### 入力
+
+  * ユーザー名とデータファイルのペアを4つ
+    * データファイル内のレシピ数は3つ
+    * 1つはこれまで使ってきたデータファイルを使うこと
+    * 残りの3つはこれまで使ってきたデータファイルを参考に新しく作ること
+    * 異なるユーザーで同じレシピ情報を持っているかもしれない
+      * 例: ユーザー1とユーザー2のどちらにも「オムライス」がある
+    * すべてのレシピは異なるIDを持つこと
+  * ユーザーID
+
+データファイルは、例えばこういう内容:
+
+    % cat recipe-data1.txt
+    オムライス http://cookpad.com/recipe/2653946
+    親子丼 http://cookpad.com/recipe/2657882
+    杏仁豆腐 http://cookpad.com/recipe/2654398
+    % cat recipe-data2.txt
+    オムライス http://cookpad.com/recipe/2653779
+    鶏の唐揚げ http://cookpad.com/recipe/2660337
+    カレー http://cookpad.com/recipe/2661962
+    % cat recipe-data3.txt
+    トマトサラダ http://cookpad.com/recipe/2662101
+    生ハムサラダ http://cookpad.com/recipe/2661792
+    和風サラダ http://cookpad.com/recipe/279208
+    % cat recipe-data4.txt
+    チョコケーキ http://cookpad.com/recipe/2661922
+    スイートポテト http://cookpad.com/recipe/2639428
+    杏仁豆腐 http://cookpad.com/recipe/2565701
+    %
+
+#### 期待する結果
+
+プログラムを実行したらユーザー名と対応するレシピ情報を読み込んでくださ
+い。その後、指定されたIDのユーザーのみ表示してください。
+
+実行例:
+
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt 4
+    ユーザー: 4: kou
+    10: チョコケーキ http://cookpad.com/recipe/2661922
+    11: スイートポテト http://cookpad.com/recipe/2639428
+    12: 杏仁豆腐 http://cookpad.com/recipe/2565701
+
+レシピIDも指定されたら該当ユーザーの該当レシピ情報だけ表示してください。
+
+実行例:
+
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt 4 11
+    ユーザー: 4: kou
+    11: スイートポテト http://cookpad.com/recipe/2639428
+
+レシピIDだけ指定したときはこれまでと同じ挙動にしてください。次の例は、
+ユーザーIDに-1を指定したらユーザーIDは指定なしという仕様にしています。
+
+実行例:
+
+    % ./recipe.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt -1 11
+    ユーザー: 1: kou
+
+    ユーザー: 2: piro
+
+    ユーザー: 3: okkez
+
+    ユーザー: 4: kou
+    11: スイートポテト http://cookpad.com/recipe/2639428
+
+READMEを読めば、グループの他の人でもIDを指定できるようにしてください。
+
+### 仕様12: ライブラリーとして切り出すこと
+
+ユーザー・レシピ管理部分をライブラリーとして切り出し、複数のプログラム
+から再利用できるようにしてください。これまでの挙動をするプログラムは、
+この切り出したライブラリーを使うようにしてください。挙動は変えないでく
+ださい。
+
+次の入出力部分はライブラリーではなく、プログラム側に入れてください。
+
+  * このプログラムの利用者からユーザー名やレシピ情報などの入力を受け取る部分
+  * データファイルを読み込む部分
+  * 結果を出力する部分
+
+プログラムをビルドする方法や実行方法が変わった場合はREADMEを更新してください。
+
+#### 入力
+
+仕様11と同じ。
+
+#### 期待する結果
+
+仕様11と同じ。
+
+READMEを読めば、グループの他の人もプログラムを実行できるようにしてくだ
+さい。
+
+### 仕様13: 出力フォーマットがCSVの別のプログラムを作ること
+
+ライブラリーを使用して結果をCSVで出力する別のプログラムを作ってください。
+
+出力フィールドは左から順に次のとおりにしてください。
+
+  * ユーザーID
+  * ユーザー名
+  * レシピID
+  * レシピ名
+  * レシピURL
+
+READMEに実行方法を追記してください。
+
+#### 入力
+
+仕様11と同じ。
+
+#### 期待する結果
+
+プログラムを実行したらユーザー名と対応するレシピ情報を読み込んでくださ
+い。その後、CSV形式でユーザー名と対応するレシピ情報を表示してください。
+
+実行例:
+
+    % ./recipe-csv.sh kou recipe-data1.txt piro recipe-data2.txt okkez recipe-data3.txt kou recipe-data4.txt
+    1,kou,1,オムライス,http://cookpad.com/recipe/2653946
+    1,kou,2,親子丼,http://cookpad.com/recipe/2657882
+    1,kou,3,杏仁豆腐,http://cookpad.com/recipe/2654398
+    2,piro,4,オムライス,http://cookpad.com/recipe/2653779
+    2,piro,5,鶏の唐揚げ,http://cookpad.com/recipe/2660337
+    2,piro,6,カレー,http://cookpad.com/recipe/2661962
+    3,okkez,7,トマトサラダ,http://cookpad.com/recipe/2662101
+    3,okkez,8,生ハムサラダ,http://cookpad.com/recipe/2661792
+    3,okkez,9,和風サラダ,http://cookpad.com/recipe/279208
+    4,kou,10,チョコケーキ,http://cookpad.com/recipe/2661922
+    4,kou,11,スイートポテト,http://cookpad.com/recipe/2639428
+    4,kou,12,杏仁豆腐,http://cookpad.com/recipe/2565701
+
+READMEを読めば、グループの他の人もプログラムを実行できるようにしてくだ
+さい。
+
+### 仕様14: シークレット
+
+メンターに仕様を聞いてください。
