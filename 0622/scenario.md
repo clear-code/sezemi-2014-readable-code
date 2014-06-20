@@ -63,14 +63,14 @@
     * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-icebreaker/)
     * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-icebreaker)
   * 自分のGitHubアカウントで
-    「#{自分のアカウント名}-sezemi-2014-readable-code-1」
+    「${自分のアカウント名}-sezemi-2014-readable-code-1」
     というリポジトリーを作る。
   * 「README.md」を作って、そこに開発言語を書いてcommit & pushする。
-  * 「#{自分のアカウント名}.md」を作って、簡単に自己紹介文を書いて
+  * 「${自分のアカウント名}.md」を作って、簡単に自己紹介文を書いて
     commit & pushする。
     * 誰でも見れる状態になるので、公開情報だけ書くように注意喚起すること。
   * グループ内の隣の人のリポジトリーに、自分の自己紹介文を
-    「#{自分のアカウント名}.md」に書いてpull requestする。
+    「${自分のアカウント名}.md」に書いてpull requestする。
     （他の人のリポジトリーをforkした後、自己紹介文を追加してpull requestする。）
   * 他の人からきたpull requestを確認の上、よさそうなら取り込む。
   * 時間が余ったら、反対の隣の人や、グループの他の人のリポジトリにも
@@ -147,7 +147,7 @@ introduction/以下にあるスライドを参照。
 やること:
 
   * 各自、課題を進めてください。
-  * 課題は「#{自分のアカウント名}-sezemi-2014-readable-code-1」に
+  * 課題は「${自分のアカウント名}-sezemi-2014-readable-code-1」に
     commit & pushしていってください。
   * 工夫したことがあったら「memo.md」というファイルを作ってメモしていっ
     てください。このファイルもリポジトリーにcommit & pushしていってください。
