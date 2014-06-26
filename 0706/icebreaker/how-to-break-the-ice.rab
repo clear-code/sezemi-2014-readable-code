@@ -7,7 +7,7 @@
 : content-source
    SEゼミ2014 - リーダブルコード勉強会1
 : date
-   2014/06/22
+   2014/07/06
 : allotted-time
    15m
 : theme
@@ -24,9 +24,9 @@
 GitHubにリポジトリーを作る
 
   名前:
-    ${アカウント名}-sezemi-2014-readable-code-1
+    ${アカウント名}-sezemi-2014-readable-code-2
   例:
-    kou-sezemi-2014-readable-code-1
+    kou-sezemi-2014-readable-code-2
 
 = やること2
 
@@ -60,7 +60,7 @@ GitHubにリポジトリーを作る
     他の人にもpull request
   * 他のグループも眺める
     * ↓で検索\n
-      sezemi-2014-readable-code-1
+      sezemi-2014-readable-code-2
 
 = 確認
 

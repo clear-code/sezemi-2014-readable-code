@@ -60,8 +60,8 @@
 
   * トレーナーはスライドを使って↓に書いているやり方を説明する。
     （スライドはicebreaker/や↓を参照。）
-    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-icebreaker/)
-    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-icebreaker)
+    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-icebreaker/)
+    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-icebreaker)
     * この間にメンターは自分のGitHubアカウントで
       「${自分のアカウント名}-sezemi-2014-readable-code-2」
       というリポジトリーを作る。
@@ -99,8 +99,8 @@
 
 introduction/以下にあるスライドを参照。
 
-  * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-introduction/)
-  * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-introduction)
+  * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-introduction/)
+  * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-introduction)
 
 ## 10:40 練習
 
@@ -124,8 +124,8 @@ introduction/以下にあるスライドを参照。
   * トレーナーはスライドを使いながら[課題](task.md)の最初に書いている概
     要と進め方を説明します。（スライドはexercise/や↓を参照。）
     （大事なことなので今日の目的はなんなのかを重点的に説明します。）
-    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-exercise/)
-    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-exercise)
+    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-exercise/)
+    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-exercise)
   * 実際に仕様1を実装してください。
   * 課題は「${自分のアカウント名}-sezemi-2014-readable-code-2」に
     commit & pushしていってください。
@@ -260,8 +260,8 @@ introduction/以下にあるスライドを参照。
 やること:
 
   * スライドを使ってやることを説明（retrospective/以下にあるスライドを参照。）
-    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-retrospective/)
-    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-retrospective)
+    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-retrospective/)
+    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-retrospective)
   * グループでよいコードとその理由の共有
     * メンターはグループが悪いコード自慢に終始しないようにいい感じに誘導して欲しい。
   * 共有したよいコードを発表できるようにまとめる
@@ -315,8 +315,8 @@ introduction/以下にあるスライドを参照。
 
 conclusion/以下にあるスライドを参照。
 
-  * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-1-conclusion/)
-  * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-1-conclusion)
+  * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-conclusion/)
+  * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-conclusion)
 
 ## 17:45 質疑応答
 

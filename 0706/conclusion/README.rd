@@ -25,9 +25,9 @@ CC BY-SA 4.0
 
 === インストール
 
-  gem install rabbit-slide-kou-sezemi-2014-readable-code-1-icebreaker
+  gem install rabbit-slide-kou-sezemi-2014-readable-code-2-icebreaker
 
 === 表示
 
-  rabbit rabbit-slide-kou-sezemi-2014-readable-code-1-icebreaker.gem
+  rabbit rabbit-slide-kou-sezemi-2014-readable-code-2-icebreaker.gem
 

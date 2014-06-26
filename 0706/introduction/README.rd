@@ -25,9 +25,9 @@ CC BY-SA 4.0
 
 === インストール
 
-  gem install rabbit-slide-kou-sezemi-2014-readable-code-1-introduction
+  gem install rabbit-slide-kou-sezemi-2014-readable-code-2-introduction
 
 === 表示
 
-  rabbit rabbit-slide-kou-sezemi-2014-readable-code-1-introduction.gem
+  rabbit rabbit-slide-kou-sezemi-2014-readable-code-2-introduction.gem
 
