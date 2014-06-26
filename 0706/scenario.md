@@ -102,7 +102,7 @@ introduction/以下にあるスライドを参照。
   * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-introduction/)
   * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-introduction)
 
-## 10:40 練習
+## 10:35 練習
 
 目的:
 
@@ -142,7 +142,7 @@ introduction/以下にあるスライドを参照。
   * メンターからOKをもらって、進め方もわかったら、
     休憩に入ってください。
 
-## 11:00 休憩
+## 10:50 休憩
 
 10分休憩。
 
@@ -150,7 +150,7 @@ introduction/以下にあるスライドを参照。
     を書けるところは今後の休憩の時に随時書いていってねと連絡する。
     （アンケートはタブを閉じても回答を再開可能。）
 
-## 11:10 課題を実装
+## 11:00 課題を実装
 
 目的:
 
