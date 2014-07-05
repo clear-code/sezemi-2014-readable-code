@@ -93,11 +93,11 @@
 
   * グループでつまづいている人がいたら助けてあげよう。
   * 他のグループより先に終わったら他のメンターの自己紹介文も読もう。
-    * ((<川原さん|URL:https://github.com/kawahara/kawahara-sezemi-2014-readable-code-2>))
-    * ((<たなべさん|URL:https://github.com/sunaot/sunaot-sezemi-2014-readable-code-2>))
-    * ((<結城さん|URL:https://github.com/piroor/piroor-sezemi-2014-readable-code-2>))
-    * ((<沖元さん|URL:https://github.com/okkez/okkez-sezemi-2014-readable-code-2>))
-    * ((<須藤|URL:https://github.com/kou/kou-sezemi-2014-readable-code-2>))
+    * [川原さん](https://github.com/kawahara/kawahara-sezemi-2014-readable-code-2)
+    * [たなべさん](https://github.com/sunaot/sunaot-sezemi-2014-readable-code-2)
+    * [結城さん](https://github.com/piroor/piroor-sezemi-2014-readable-code-2)
+    * [沖元さん](https://github.com/okkez/okkez-sezemi-2014-readable-code-2)
+    * [須藤](https://github.com/kou/kou-sezemi-2014-readable-code-2)
 
 ## 10:20 進め方の説明
 
