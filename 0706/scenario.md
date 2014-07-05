@@ -97,6 +97,7 @@
     * ((<たなべさん|URL:https://github.com/sunaot/sunaot-sezemi-2014-readable-code-2>))
     * ((<結城さん|URL:https://github.com/piroor/piroor-sezemi-2014-readable-code-2>))
     * ((<沖元さん|URL:https://github.com/okkez/okkez-sezemi-2014-readable-code-2>))
+    * ((<須藤|URL:https://github.com/kou/kou-sezemi-2014-readable-code-2>))
 
 ## 10:20 進め方の説明
 
