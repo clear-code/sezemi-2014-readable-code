@@ -217,6 +217,10 @@ introduction/以下にあるスライドを参照。
 
 目的のために達成したいこと:
 
+  * トレーナーはスライドを使って↓に書いているやり方を説明する。
+    （スライドはcode-change/や↓を参照。）
+    * [スライド on Rabbit Slide Show](http://slide.rabbit-shocker.org/authors/kou/sezemi-2014-readable-code-2-code-change/)
+    * [スライド on SlideShare](http://www.slideshare.net/kou/sezemi-2014-readable-code-2-code-change)
   * 参加者が「よいコード」を見つけること。
     後でまとめるので、「よいコード」と判断した理由や、
     どのようにして「よいコード」を見つけたか（どうやって気付いたか）もメモしておく。
